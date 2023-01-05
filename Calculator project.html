@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: white;
+            }
+            h1{
+                color:black;
+                font-size: large;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        
+        a = <input type="number" name="a" id="a"><br>
+        b = <input type="number" name="b" id="b"><br>
+        <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">Add</button><br>
+        <button onclick="sub(document.getElementById('a').value,document.getElementById('b').value)">Subraction</button><br>
+        <button onclick="multi(document.getElementById('a').value,document.getElementById('b').value)">Multiply</button><br>
+        <button onclick="div(document.getElementById('a').value,document.getElementById('b').value)">Division</button>
+        <p id="demo"></p>
+    </body>
+    <script>
+        function add(a,b){
+            var sum = parseInt(a,10)+parseInt(b,10);
+            document.getElementById("demo").innerHTML="Result = " + sum;
+        }
+        function sub(a,b){
+            var sum = parseInt(a,10)-parseInt(b,10);
+            document.getElementById("demo").innerHTML="Result = " + sum;
+        }
+        function multi(a,b){
+            var sum = parseInt(a,10)*parseInt(b,10);
+            document.getElementById("demo").innerHTML="Result = " + sum;
+        }
+        function div(a,b){
+            var sum = parseInt(a,10)/parseInt(b,10);
+            document.getElementById("demo").innerHTML="Result = " + sum;
+        }
+    </script>
+</html>
