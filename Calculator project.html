@@ -7,25 +7,34 @@
             }
             h1{
                 color:black;
-                font-size: large;
+                font-size: larger;
                 text-align: center;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: 'Times New Roman', Times, serif;
             }
-            p{
-
+            .input{
+                text-align: center;
+                border-radius: 0.5cm;
+                border-color: black;
+            }
+            .b1{
+                border-radius: 1cm;
+                color: black;
+                background-color: white;
+                size: 3cm;
             }
         </style>
     </head>
     <body>
-        <h1>Calculator</h1>
-        
-        a = <input type="number" name="a" id="a"><br>
-        b = <input type="number" name="b" id="b"><br>
-        <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">Add</button><br>
-        <button onclick="sub(document.getElementById('a').value,document.getElementById('b').value)">Subraction</button><br>
-        <button onclick="multi(document.getElementById('a').value,document.getElementById('b').value)">Multiply</button><br>
-        <button onclick="div(document.getElementById('a').value,document.getElementById('b').value)">Division</button>
-        <p id="demo"></p>
+        <center>
+            <h1>Calculator</h1>
+            A = <input type="number" name="a" id="a" class="input"><br>
+            B = <input type="number" name="b" id="b" class="input"><br>
+            <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)" class="b1">Add</button><br>
+            <button onclick="sub(document.getElementById('a').value,document.getElementById('b').value)" class="b1">Subraction</button><br>
+            <button onclick="multi(document.getElementById('a').value,document.getElementById('b').value)" class="b1">Multiply</button><br>
+            <button onclick="div(document.getElementById('a').value,document.getElementById('b').value)" class="b1">Division</button>
+            <p id="demo"></p>
+        </center>
     </body>
     <script>
         function add(a,b){
